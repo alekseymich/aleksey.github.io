@@ -154,12 +154,123 @@ body {
 }
 
 .section {
-  padding: 91px 0 0 0;
+  padding: 91px 0;
 }
 .container {
 }
 .section-header {
-  margin-bottom: 40px;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto 40px;
+  text-align: center;
+  h3 {
+    font-family: Kaushan Script;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #333333;
+  }
+  h2 {
+    margin-top: 23px;
+    font-family: Montserrat;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  h2:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto;
+    background-color: #f38181;
+  }
 }
 .section-text {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.about-item {
+  position: relative;
+  width: 380px;
+  background-color: #95e1d3;
+}
+
+.about-item:hover .about-image {
+  transform: translate3d(-10px, -10px, 0);
+}
+.about-item:hover .about-image img {
+  opacity: 0.1;
+}
+.about-item:hover .about-text {
+  opacity: 1;
+}
+.about-image {
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+  transition: transform 0.2s linear;
+}
+.about-image img {
+  transition: opacity 0.1s linear;
+}
+.about-text {
+  width: 100%;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+  transition: opacity 0.2s linear;
+}
+
+.statistics {
+  background-color: #95e1d3;
+}
+.container {
+}
+.stat {
+  display: flex;
+}
+.stat-item {
+  padding: 90px 0;
+  flex: 1 1 0;
+  border-left: 1px solid #b5eae0;
+  text-align: center;
+  color: #ffffff;
+}
+.stat-item:last-child {
+  border-right: 1px solid #b5eae0;
+}
+.stat-count {
+  font-family: Montserrat;
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.stat-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
 }
